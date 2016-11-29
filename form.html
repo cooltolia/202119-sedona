@@ -11,7 +11,6 @@
   <header class="page-header">
     <nav class="main-nav">
       <ul class="main-nav__menu-list">
-        <button type="button" class="main-nav__exit"></button>
         <li class="main-nav__menu-item">
           <a href="index.html" class="main-nav__link ">Главная</a>
         </li>
@@ -27,95 +26,88 @@
       </ul>
     </nav>
     <div class="page-header__top-row">
-      <div class="page-header__city-logo">
+      <a href="index.html" class="page-header__city-logo">
         <img src="http://placehold.it/102x83" alt="Логотип">
-      </div>
+      </a>
       <button type="button" class="hamburger"></button>
-    </div>
-    <div class="page-header__low-row">
-      <div class="page-header__sedona-logo">
-        <img src="http://placehold.it/229x39" alt="Sedona">
-      </div>
     </div>
   </header>
 
   <main class="main-form">
-    <section class="feedback">
-      <header class="feedback__header">
-        <h1 class="feedback__title">Оставьте свой отзыв</h1>
-        <p class="feedback__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </header>
-      <form class="feedback-form" method="post" action="#">
-        <div class="feedback-form__author">
-          <h2 class="feedback-form__title">Представьтесь:</h2>
-          <div class="feedback-form__author-name">
-            <label for="author-name">Имя<sup>*</sup>:</label>
-            <input type="text" id="author-name" required placeholder="Петр">
-          </div>
-          <div class="feedback-form__author-surname">
-            <label for="author-surname">Фамилия<sup>*</sup>:</label>
-            <input type="text" id="author-surname" required placeholder="Иванов">
-          </div>
-          <div class="feedback-form__author-patronym">
-            <label for="author-patronym">Отчество:</label>
-            <input type="text" id="author-patronym" placeholder="Александрович">
-          </div>
+    <header class="content-header">
+      <h1 class="content-header__title">Оставьте свой отзыв</h1>
+      <p class="content-header__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </header>
+    <form class="feedback-form" method="post" action="#">
+      <div class="feedback-form__author">
+        <h2 class="feedback-form__title">Представьтесь:</h2>
+        <div class="feedback-form__author-name">
+          <label for="author-name">Имя<sup>*</sup>:</label>
+          <input type="text" id="author-name" required placeholder="Петр">
         </div>
-        <div class="feedback-form__contacts">
-          <h2 class="feedback-form__title">Контактная информация:</h2>
-          <div class="feedback-form__telephone">
-            <label for="telephone">Контактный телефон<sup>*</sup>:</label>
-            <input type="number" id="telephone" required placeholder="Введите телефон">
-            <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
-          </div>
-          <div class="feedback-form__author-email">
-            <label for="author-email">"Электронная почта"<sup>*</sup>:</label>
-            <input type="email" id="author-email" required placeholder="Введите e-mail">
-          </div>
+        <div class="feedback-form__author-surname">
+          <label for="author-surname">Фамилия<sup>*</sup>:</label>
+          <input type="text" id="author-surname" required placeholder="Иванов">
         </div>
-        <div class="feedback-form__impression">
-          <h2 class="feedback-form__title">Ваше общее впечатление:</h2>
-          <div class="feedback-form__positive">
-            <input type="radio" id="positive-impression" name="positive-impression" checked>
-            <label for="positive-impression">Скорее положительное</label>
-          </div>
-          <div class="feedback-form__negative">
-            <input type="radio" id="negative-impression" name="negative-impression">
-            <label for="negative-impression">Скорее отрицательное</label>
-          </div>
-          <div class="feedback-form__neutral">
-            <input type="radio" id="neutral-impression" name="neutral-impression">
-            <label for="neutrale-impression">Затрудняюсь ответить</label>
-          </div>
+        <div class="feedback-form__author-patronym">
+          <label for="author-patronym">Отчество:</label>
+          <input type="text" id="author-patronym" placeholder="Александрович">
         </div>
-        <div class="feedback-form__visited">
-          <h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
-          <div class="feedback-form__bridge">
-            <input type="checkbox" id="bridge" name="bridge" checked>
-            <label for="bridge">Мост Дьявола</label>
-          </div>
-          <div class="feedback-form__park">
-            <input type="checkbox" id="park" name="park" checked>
-            <label for="park">Слайд-парк</label>
-          </div>
-          <div class="feedback-form__mountain">
-            <input type="checkbox" id="mountain" name="mountain">
-            <label for="mountain">Гора колокол</label>
-          </div>
-          <div class="feedback-form__rocks">
-            <input type="checkbox" id="rocks" name="rocks">
-            <label for="rocks">Красные скалы</label>
-          </div>
+      </div>
+      <div class="feedback-form__contacts">
+        <h2 class="feedback-form__title">Контактная информация:</h2>
+        <div class="feedback-form__telephone">
+          <label for="telephone">Контактный телефон<sup>*</sup>:</label>
+          <input type="number" id="telephone" required placeholder="Введите телефон">
+          <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
         </div>
-        <div class="feedback-form__emotions">
-          <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
-          <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="feedback-form__author-email">
+          <label for="author-email">"Электронная почта"<sup>*</sup>:</label>
+          <input type="email" id="author-email" required placeholder="Введите e-mail">
         </div>
-        <div class="feedback-form__submit">
-          <button type="submit" class="btn">Отправить отзыв</button>
+      </div>
+      <div class="feedback-form__impression">
+        <h2 class="feedback-form__title">Ваше общее впечатление:</h2>
+        <div class="feedback-form__positive">
+          <input type="radio" id="positive-impression" name="positive-impression" checked>
+          <label for="positive-impression">Скорее положительное</label>
         </div>
-      </form>
-    </section>
+        <div class="feedback-form__negative">
+          <input type="radio" id="negative-impression" name="negative-impression">
+          <label for="negative-impression">Скорее отрицательное</label>
+        </div>
+        <div class="feedback-form__neutral">
+          <input type="radio" id="neutral-impression" name="neutral-impression">
+          <label for="neutrale-impression">Затрудняюсь ответить</label>
+        </div>
+      </div>
+      <div class="feedback-form__visited">
+        <h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
+        <div class="feedback-form__bridge">
+          <input type="checkbox" id="bridge" name="bridge" checked>
+          <label for="bridge">Мост Дьявола</label>
+        </div>
+        <div class="feedback-form__park">
+          <input type="checkbox" id="park" name="park" checked>
+          <label for="park">Слайд-парк</label>
+        </div>
+        <div class="feedback-form__mountain">
+          <input type="checkbox" id="mountain" name="mountain">
+          <label for="mountain">Гора колокол</label>
+        </div>
+        <div class="feedback-form__rocks">
+          <input type="checkbox" id="rocks" name="rocks">
+          <label for="rocks">Красные скалы</label>
+        </div>
+      </div>
+      <div class="feedback-form__emotions">
+        <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
+        <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <div class="feedback-form__submit">
+        <button type="submit" class="btn">Отправить отзыв</button>
+      </div>
+    </form>
   </main>
 
   <footer class="main-footer">
@@ -135,4 +127,5 @@
   </footer>
 
 </body>
+
 </html>
