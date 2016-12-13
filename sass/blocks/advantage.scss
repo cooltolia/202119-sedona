@@ -1,0 +1,49 @@
+.advantage {
+
+}
+
+.advantage__header {
+  background-color: $blue;
+  padding: 0 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__title {
+
+}
+
+.advantage__number {
+
+}
+
+.advantage__about {
+
+}
+
+.advantage__photo {
+  width: 320px;
+  height: 260px;
+  overflow-x: hidden; // Временное решение. Вопрос подгонки изображения.
+  img {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+.advantage__features {
+
+}
+
+.advantage__features {
+
+  b {
+
+  }
+
+  p {
+
+  }
+
+}
