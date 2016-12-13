@@ -1,4 +1,28 @@
 .page-header {
-  font-family: "PT Sans";
+  max-width: 320px;
+  font-family: $font-stack;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
 
+.page-header__top-row {
+  position: relative;
+  width: 320px;
+  min-height: 56px;
+  background-color: #fff;
+}
+
+.page-header__city-logo {
+  display: block;
+  position: absolute;
+  width: 102px;
+  height: 83px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: 0 auto;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
 }
