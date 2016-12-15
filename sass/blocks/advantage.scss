@@ -1,49 +1,139 @@
-.advantage {
-
-}
+.advantage {}
 
 .advantage__header {
-  background-color: $blue;
-  padding: 0 20px;
-
   text-align: center;
   text-transform: uppercase;
+
+  &--light {
+    padding: 45px 20px 42px;
+    background-color: $blue;
+    color: #fff;
+  }
+
+  &--dark {
+    position: relative;
+    padding: 33px 20px 31px;
+    background-color: $grey;
+    color: #000;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      border-bottom: 1px solid rgba(black, 0.1);
+    }
+  }
+
+  &--bg {
+    padding: 61px 20px 45px;
+    background-image: url("/img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+  }
+}
+
+.advantage--last-child .advantage__header::after {
+  border-bottom: none;
 }
 
 .advantage__title {
-
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 .advantage__number {
+  position: relative;
+  width: 32px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 21px;
 
+  &::before {
+    content: "\2013";
+    position: absolute;
+    right: -6px;
+  }
+
+  &::after {
+    content: "\2013";
+    position: absolute;
+    left: -6px;
+  }
 }
 
 .advantage__about {
-
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .advantage__photo {
   width: 320px;
   height: 260px;
   overflow-x: hidden; // Временное решение. Вопрос подгонки изображения.
+
   img {
     display: block;
+    max-width: 100%;
     max-height: 100%;
   }
 }
 
 .advantage__features {
-
+  padding: 41px 20px 42px;
+  font-family: $font-stack;
+  color: #000;
+  text-transform: uppercase;
 }
 
-.advantage__features {
+.advantage__feature {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    background-size: 100% 100%;
+    left: 0;
+    top: -5px;
+  }
 
   b {
-
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
   }
 
   p {
-
+    margin: 0;
+    font-size: 14px;
+    color: $dark-grey;
+    line-height: 21px;
   }
+}
 
+.advantage__feature--home::before {
+  background-image: url("/img/icon-house.svg");
+}
+
+.advantage__feature--souvenirs::before {
+  background-image: url("/img/icon-gift.svg");
+}
+
+.advantage__feature--food::before {
+  background-image: url("/img/icon-burger.svg");
 }
