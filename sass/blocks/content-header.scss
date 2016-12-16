@@ -1,0 +1,26 @@
+.content-header {
+  margin-top: 158px;
+  padding: 40px 20px 30px;
+  border-bottom: 1px solid #e5e5e5;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.content-header__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.content-header__intro {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-grey;
+}
