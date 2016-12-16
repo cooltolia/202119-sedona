@@ -33,7 +33,7 @@
 
   background-color: $blue;
   box-shadow:  0 -1px 0 0px rgba(#fff, 0.2),
-               0 1px 0 0px rgba(#010101, 0.2);
+              0 1px 0 0px rgba(#010101, 0.2);
 
   &:link {
     color: inherit;
@@ -44,7 +44,7 @@
   &:hover {
     background-color: #669ec0;
     box-shadow:  0 -1px 0 0px rgba(#fff, 0.2),
-                 0 1px 0 0px rgba(#010101, 0.2);
+                  0 1px 0 0px rgba(#010101, 0.2);
   }
   &:active {
     background-color: #5496bd;
