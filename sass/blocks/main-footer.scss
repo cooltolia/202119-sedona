@@ -5,22 +5,25 @@
   padding: 36px 20px 29px;
   // display: flex;
   // flex-direction: column;
+
   background-color: #fefefe;
 }
 
 .main-footer__hashtag {
   display: block;
   margin: 0 auto 36px;
-  font-size: 21px;
-  text-transform: uppercase;
-  text-align: center;
+
   font-weight: bold;
+  font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main-footer__socials {
   width: 150px;
   margin: 0 auto 44px;
+
   font-size: 0;
 }
 
@@ -29,9 +32,10 @@
   width: 46px;
   height: 48px;
   margin-right: 6px;
-  background-color: $blue;
-  background-position: center;
+
+  background-color: $main-theme;
   background-repeat: no-repeat;
+  background-position: center;
   &:last-child {
     margin-right: 0;
   }
@@ -48,28 +52,30 @@
     background-color: #669ec0;
   }
   &:active {
-    background-color: #5496bd;
     color: #88b6d1;
+
+    background-color: #5496bd;
   }
 }
 
 .main-footer__copyright {
   display: block;
-  position: relative;
   width: 140px;
   margin: 0 auto;
   padding: 0 5px;
+
   font-size: 14px;
   line-height: 26px;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
 }
 
 .main-footer__copyright-logo {
-  position: absolute;
+  display: inline-block;
   width: 27px;
   height: 34px;
-  margin-left: 11px;
-  margin-top: -5px;
+  margin-left: 8px;
+
+  vertical-align: middle;
 }

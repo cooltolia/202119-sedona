@@ -1,85 +1,94 @@
 .video-controls {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 20px;
   position: absolute;
   bottom: -66px;
 
-
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .video-controls__progress {
   position: relative;
+
   box-sizing: border-box;
   width: 100%;
   height: 45px;
-  background-color: rgba(black, 0.6);
-
   overflow: hidden;
+
+  background-color: rgba(black, 0.6);
 }
 
 .video-conrols__progress-bar {
   position: relative;
+
   width: 235px;
   height: 3px;
   margin: 22px auto 0;
+
   background-color: rgba(white, 0.2);
 }
 
 .video-conrols__progress-toggle {
   position: absolute;
-  width: 9px;
-  height: 9px;
   top: -3px;
   left: 36px;
-  border-radius: 50%;
+
+  width: 9px;
+  height: 9px;
+
   background-color: white;
+  border-radius: 50%;
 }
 
 .video-controls__buttons {
   position: relative;
+
   box-sizing: border-box;
   width: 100%;
   height: 66px;
   padding: 22px 24px;
+
   background-color: #f2f2f2;
 }
 
 .video-conrols__replay {
   position: absolute;
+  left: 20px;
+
   width: 16px;
   height: 20px;
-  background: none; // Откуда у кнопки еще свой background берется я так и не понял...
+
+  background: none;
   background-image: url("/img/icon-video-replay.svg");
   border: none;
   outline: none;
   cursor: pointer;
-
-  left: 20px;
 }
 
 .video-controls__subtitles {
   position: absolute;
+  right: 74px;
+
   width: 32px;
   height: 20px;
+
   background: none;
   background-image: url("/img/icon-video-subtitles.svg");
   border: none;
   outline: none;
   cursor: pointer;
-
-  right: 74px;
 }
 
 .video-controls__fullscreen {
   position: absolute;
+  right: 23px;
+
   width: 20px;
   height: 20px;
+
   background: none;
   background-image: url("/img/icon-video-fullscreen.svg");
   border: none;
   outline: none;
   cursor: pointer;
-
-  right: 23px;
 }

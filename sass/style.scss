@@ -2,18 +2,13 @@
 @import "variables.scss";
 @import "global/fonts.scss";
 
-
-// common blocks
-
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/content-header.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/btn.scss";
-@import "blocks/hamburger.scss";
-
-// index.html
+@import "blocks/menu-toggle.scss";
 
 @import "blocks/main-index.scss";
 @import "blocks/introduction.scss";
@@ -21,15 +16,10 @@
 @import "blocks/find-hotel.scss";
 @import "blocks/map.scss";
 
-//photo.html
-
 @import "blocks/main-photo.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/video-block.scss";
 @import "blocks/video-controls.scss";
-
-
-//form.html
 
 @import "blocks/main-form.scss";
 @import "blocks/feedback-form.scss";

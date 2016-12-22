@@ -3,9 +3,10 @@
   margin: 0 auto;
 
   font-family: $font-stack;
+
   background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-mobile@1x.jpg");
-  background-size: 320px 57px, 282px 214px, 320px 389px;
-  background-position: center 348px, center 90px, top;
   background-repeat: no-repeat;
+  background-position: center 348px, center 90px, top;
+  background-size: 320px 57px, 282px 214px, 320px 389px;
   border-top: 1px solid transparent;
 }

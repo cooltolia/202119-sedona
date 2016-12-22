@@ -1,11 +1,12 @@
 .main-form {
   max-width: 320px;
   margin: 0 auto;
+
   font-family: $font-stack;
 
   background-image: url("/img/text-sedona.svg"), url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
-  background-size: 229px 39px, 320px 57px, 320px 389px;
-  background-position: center 52px, center 117px, center -231px;
   background-repeat: no-repeat;
+  background-position: center 52px, center 117px, center -231px;
+  background-size: 229px 39px, 320px 57px, 320px 389px;
   border-top: 1px solid transparent;
 }

@@ -1,15 +1,16 @@
-.feedback-form {
-
-}
-
 .feedback-form__block {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  width: 280px;
+  width: 320px;
   margin: 0;
   padding: 20px 20px 25px;
+
+  text-transform: uppercase;
+
   border: none;
-  border-bottom: 1px solid #e5e5e5;
   border-top: 1px solid transparent;
+  border-bottom: 1px solid #e5e5e5;
   &:last-of-type {
     border-bottom: none;
   }
@@ -17,61 +18,135 @@
 
 .feedback-form__title {
   display: block;
-  text-align: center;
   padding: 0;
   padding-top: 20px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback-form__element {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .feedback-form__label {
-  display: flex;
-  width: 280px;
-  flex-direction: row;
-  margin-bottom: 20px;
-  span:first-child {
-    align-self: center;
-    margin-right: 15px;
+  position: relative;
 
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 26px;
-    color: $dark-grey;
+  flex: 0 0 auto;
+  margin-right: 13px;
+  &--long {
+    margin-bottom: 14px;
   }
-  &--column {
-    flex-direction: column;
-    span:first-child{
-      align-self: flex-start;
-      margin-bottom: 10px;
-    }
+  &--radio,
+  &--checkbox {
+    margin-bottom: 33px;
+    padding-left: 78px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #eeeeee;
+    border-radius: 50%;
+    transform: translateY(-15px);
+    cursor: pointer;
+  }
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #eeeeee;
+    transform: translateY(-15px);
+    cursor: pointer;
   }
 }
 
-.feedback-form__input {
-  box-sizing: border-box;
-  flex-grow: 1;
-  flex-shrink: 1;
+.feedback-form__radio-input:checked + .feedback-form__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 
+  width: 22px;
+  height: 22px;
+
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translateY(2px) translateX(18px);
+}
+
+.feedback-form__checkbox-input:checked + .feedback-form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 10px;
+  height: 18px;
+
+  border: transparent;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: translateY(-2px) translateX(22px) rotate(45deg);
+  ;
+}
+
+.feedback-form__input {
+  flex: 1 2 auto;
+  box-sizing: border-box;
+  width: 175px;
   padding: 22px 22px 19px 22px;
+
   background-color: #f2f2f2;
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .feedback-form__error {
   padding-top: 5px;
-  text-transform: none;
+  padding-left: 21px;
+
   font: inherit;
   color: #ff5c5c;
+  text-transform: none;
+}
+
+.feedback-form__radio-input,
+.feedback-form__checkbox-input {
+  display: none;
 }
 
 .feedback-form__textarea {
   box-sizing: border-box;
+  min-width: 280px;
   max-width: 280px;
   height: 160px;
+  margin: 0;
+  padding: 22px 21px;
+
+  line-height: 26px;
+
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -81,26 +156,29 @@
   display: block;
   width: 280px;
   margin: 25px auto;
-  text-decoration: none;
+  padding: 17px 0 19px;
+
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
-  padding: 17px 0 19px;
-  color: #fff;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
   border: none;
   outline: none;
-
+  cursor: pointer;
   &:hover {
     background-color: #669ec0;
   }
-
   &:active {
-    background-color: #5496bd;
     color: #88b6d1;
-  }
 
-  &--disabled {
-    background-color: #e5e5e5;
+    background-color: #5496bd;
+  }
+  &:disabled {
     color: inherit;
+
+    background-color: #e5e5e5;
   }
 }

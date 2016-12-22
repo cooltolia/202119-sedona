@@ -1,20 +1,23 @@
 .find-hotel {
   padding: 33px 20px 49px;
+
   font-family: $font-stack;
-  text-transform: uppercase;
   text-align: center;
   color: 0;
+  text-transform: uppercase;
 }
 
 .find-hotel__title {
   margin: 0 0 17px;
+
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .find-hotel__text {
   margin: 0 0 40px;
+
   font-size: 14px;
   line-height: 24px;
 }
@@ -22,24 +25,27 @@
 .find-hotel__btn {
   display: block;
   width: 280px;
-  text-decoration: none;
+  padding: 17px 0 19px;
+
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
-  padding: 17px 0 19px;
-  color: #fff;
+  color: #ffffff;
+  text-decoration: none;
 
   &:hover {
     background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496bd;
     color: #88b6d1;
+
+    background-color: #5496bd;
   }
 
   &--disabled {
-    background-color: #e5e5e5;
     color: inherit;
+
+    background-color: #e5e5e5;
   }
 }
