@@ -1,17 +1,8 @@
 .page-header {
   max-width: 320px;
   margin: 0 auto;
-
-  font-weight: bold;
-  font-size: 18px;
-  font-family: $font-stack;
-  color: #ffffff;
-}
-
-.page-header__top-row {
   position: relative;
 
-  width: 320px;
   min-height: 56px;
 
   background-color: #ffffff;
@@ -30,3 +21,10 @@
     max-height: 100%;
   }
 }
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    top: 0;
+  }
+}
+

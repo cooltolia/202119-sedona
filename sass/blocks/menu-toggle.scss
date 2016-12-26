@@ -1,6 +1,6 @@
 .menu-toggle {
   position: absolute;
-  top: 50%;
+  top: 30px;
   right: 20px;
 
   display: block;
@@ -12,8 +12,19 @@
   background: none;
   background-image: url("/img/icon-menu.svg");
   background-position: center;
+  background-repeat: no-repeat;
   border: none;
   outline: none;
   transform: translateY(-21px / 2);
   cursor: pointer;
 }
+
+.menu-toggle--close {
+   background-image: url("/img/icon-cross.svg");
+}
+
+//@media (min-width: 768px) {
+// .menu-toggle {
+//    display: none;
+//  }
+//}
