@@ -1,5 +1,5 @@
 .page-header {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   position: relative;
 
@@ -11,6 +11,8 @@
 .page-header__logo {
   position: absolute;
   left: 50%;
+  top: 0;
+  height: 83px;
 
   display: block;
   width: 102px;
@@ -22,9 +24,25 @@
   }
 }
 
+.main-nav--open ~ .page-header__logo {
+  top: 230px;
+}
+
 @media (min-width: 768px) {
-  .page-header__logo {
-    top: 0;
+  .page-header {
+    width: 768px;
   }
 }
+
+@media (min-width: 1280px) {
+  .page-header {
+    width: 1200px;
+    padding: 0 40px;
+  }
+}
+
+
+
+
+
 

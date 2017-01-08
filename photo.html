@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона. Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,7 @@
 <body>
 
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <ul class="main-nav__menu-list">
         <li class="main-nav__menu-item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -26,12 +27,11 @@
         </li>
       </ul>
     </nav>
-    <div class="page-header__top-row">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
-      </a>
-      <button type="button" class="menu-toggle"></button>
-    </div>
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+    </a>
+    <button type="button" class="menu-toggle"></button>
+
   </header>
 
   <main class="main-photo">
@@ -96,7 +96,7 @@
       <img class="main-footer__copyright-logo" src="/img/htmlacademy.svg" width="27" height="34" alt="Логотиа HTML Академии">
     </a>
   </footer>
-
+<script src="js/menu-toggle.js"></script>
 </body>
 
 </html>
