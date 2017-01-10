@@ -13,7 +13,9 @@
 
 @media (min-width: 768px) {
   .main-index {
-    width: 768px;
+    width: auto;
+    min-width: 768px;
+    max-width: 1100px;
     background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-tablet@1x.jpg");
     background-position: center 461px, center 90px, top;
     background-size: 768px 57px, 460px 350px, 768px 518px;

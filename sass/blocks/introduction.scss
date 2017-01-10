@@ -6,8 +6,8 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
-
 
 
 .introduction__title {
@@ -25,9 +25,30 @@
   color: #333333;
 }
 
+.introduction__decor {
+  position: absolute;
+  box-sizing: border-box;
+  width: 320px;
+  height: 57px;
+  left: 0;
+  background-image: url("/img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
 @media (min-width: 768px) {
   .introduction {
     margin-top: 518px;
+    width: 500px;
+    padding: 49px 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .introduction__title {
+    font-size: 21px;
+  }
+  .introduction__decor {
+    display: none;
   }
 }
 
