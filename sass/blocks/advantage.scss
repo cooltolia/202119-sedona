@@ -42,7 +42,7 @@
 }
 
 .advantage__title {
-  margin: 0 auto;
+  margin: 0 auto 15px;
 
   font-weight: bold;
   font-size: 18px;
@@ -50,7 +50,7 @@
 }
 
 .advantage__number {
-  margin: 14px 0;
+  margin-bottom: 18px;
 
   font-size: 14px;
   line-height: 21px;
@@ -64,11 +64,13 @@
 }
 
 .advantage__photo {
+  position: relative;
+  align-self: stretch;
   width: 320px;
-  height: 260px;
-  overflow-x: hidden; // Временное решение. Вопрос подгонки изображения.
+  min-height: 260px;
 
   img {
+    position: absolute;
     display: block;
     width: 100%;
     max-width: 100%;
@@ -137,6 +139,15 @@
   background-image: url("/img/icon-burger.svg");
 }
 
+@media (max-width: 767px) {
+  .advantage__title br,
+  .advantage__about span,
+  .advantage__about br { //перенос в слове "достопримечательности"
+    display: none;
+  }
+}
+
+
 @media (min-width: 768px) {
   .advantages {
     display: flex;
@@ -147,17 +158,27 @@
     box-sizing: border-box;
     width: 256px;
     min-height: 256px;
-    padding: 45px 47px;
-    flex-grow: 0;
+    padding: 45px 47px 20px;
+    flex-grow: 1;
 
-    &--dark {
-      flex-grow: 1;
+    &--light {
+      max-width: 380px;
     }
+
+    &::after {
+      border-bottom: none;
+    }
+  }
+  .advantage__title {
+    font-size: 21px;
+  }
+  .advantage__number {
+    margin-bottom: 25px;
   }
   .advantage__photo {
     min-width: 66%;
-    height: 256px;
-    flex-grow: 1;
+    min-height: 256px;
+    flex-grow: 2;
   }
   .advantage__features {
     width: 100%;
@@ -172,7 +193,7 @@
     flex-basis: 256px;
     flex-grow: 1;
     margin-bottom: 0;
-    padding: 160px 50px 10px;
+    padding: 158px 50px 10px;
     text-align: center;
 
     &::before {
@@ -181,7 +202,7 @@
     transform: translateX(-40px);
 
     width: 80px;
-    height: 80px;
+    height: 73px;
 
     background-size: 100% 100%;
   }
@@ -189,5 +210,11 @@
   .advantage__feature-title {
     font-size: 21px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1215px) {
+  .advantage__header--light {
+    max-width: 400px;
   }
 }

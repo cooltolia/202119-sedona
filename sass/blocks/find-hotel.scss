@@ -1,5 +1,7 @@
 .find-hotel {
-  padding: 33px 20px 49px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 31px 0px 46px;
 
   font-family: $font-stack;
   text-align: center;
@@ -47,5 +49,27 @@
     color: inherit;
 
     background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .find-hotel {
+    width: 480px;
+    padding: 55px 0px;
+  }
+  .find-hotel__btn {
+    width: 480px;
+  }
+  .find-hotel__text {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .find-hotel {
+   padding-bottom: 63px;
+  }
+  .find-hotel__text {
+    margin-bottom: 50px;
   }
 }
