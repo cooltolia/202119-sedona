@@ -168,6 +168,13 @@
     &::after {
       border-bottom: none;
     }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+    &:nth-child(n+6) {
+      order: 3;
+    }
   }
   .advantage__title {
     font-size: 21px;
@@ -179,6 +186,10 @@
     min-width: 66%;
     min-height: 256px;
     flex-grow: 2;
+
+    &:nth-child(5) {
+      order: 1;
+    }
   }
   .advantage__features {
     width: 100%;
@@ -195,6 +206,14 @@
     margin-bottom: 0;
     padding: 158px 50px 10px;
     text-align: center;
+
+    &--food {
+      order: 1;
+    }
+
+    &--souvenirs {
+      order: 2;
+    }
 
     &::before {
     top: 60px;

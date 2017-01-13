@@ -1,6 +1,6 @@
 .video-block {
   margin-bottom: 66px;
-  padding: 35px 0 49px;
+  padding: 35px 0 37px;
 
   text-align: center;
   color: #000000;
@@ -35,4 +35,46 @@
   height: 201px;
 
   background-image: url("/img/video-mobile@1x.jpg");
+}
+
+@media (min-width: 768px) {
+
+  .video-block {
+    padding: 65px 60px 0px;
+  }
+
+  .video-block__title {
+    font-size: 30px;
+    width: 415px;
+    margin: 0 auto 30px;
+  }
+
+  .video-block__intro {
+    width: 415px;
+    padding: 0 110px;
+    margin: 0 auto 75px;
+  }
+
+  .video-block__item {
+    width: 648px;
+    height: 499px;
+    margin: 0 auto;
+
+    background-image: url("/img/video-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1215px) {
+
+  .video-block {
+    margin-bottom: 84px;
+  }
+
+  .video-block__item {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+
+    background-image: url("/img/video-desktop@1x.jpg");
+  }
 }

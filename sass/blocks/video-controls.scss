@@ -5,6 +5,9 @@
   box-sizing: border-box;
   width: 100%;
   padding: 0 20px;
+
+  background-color: rgba(black, 0.6);
+  background-clip: content-box;
 }
 
 .video-controls__progress {
@@ -15,16 +18,17 @@
   height: 45px;
   overflow: hidden;
 
-  background-color: rgba(black, 0.6);
+
 }
 
-.video-conrols__progress-bar {
+.video-controls__progress-bar {
   position: relative;
 
   width: 235px;
   height: 3px;
-  margin: 22px auto 0;
-
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: rgba(white, 0.2);
 }
 
@@ -91,4 +95,59 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+  .video-controls {
+    padding: 0;
+    height: 93px;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .video-controls__progress {
+    height: 100%;
+  }
+
+  .video-controls__progress-bar {
+    width: 389px;
+    margin: 0;
+    left: 93px;
+  }
+
+  .video-conrols__progress-toggle {
+    left: 113px;
+  }
+
+  .video-controls__buttons {
+    padding: 0;
+    height: 93px;
+    bottom: 93px;
+    background-color: transparent;
+  }
+
+  .video-controls__buttons button {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .video-conrols__replay {
+    left: 35px;
+  }
+}
+
+@media (min-width: 1215px) {
+
+   .video-controls__progress-bar {
+    width: 540px;
+  }
+
+  .video-controls__subtitles {
+    right: 92px;
+  }
+
+  .video-controls__fullscreen {
+    right: 42px;
+  }
 }
