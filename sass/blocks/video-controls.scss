@@ -23,6 +23,7 @@
 
 .video-controls__progress-bar {
   position: relative;
+  z-index: 2;
 
   width: 235px;
   height: 3px;
@@ -42,6 +43,7 @@
 
   background-color: white;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .video-controls__buttons {
@@ -128,6 +130,7 @@
   }
 
   .video-controls__buttons button {
+    z-index: 2;
     top: 50%;
     transform: translateY(-50%);
   }
