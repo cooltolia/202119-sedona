@@ -1,5 +1,6 @@
 .feedback-form {
   display: block;
+  position: relative;
 
   padding: 0 20px;
 }
@@ -54,6 +55,7 @@
 
 .feedback-form__element {
   position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,6 +70,7 @@
   margin-right: 13px;
 
   font-size: 14px;
+  
 
   &--big {
     margin-bottom: 14px;
@@ -112,11 +115,30 @@
   &--checkbox:active::before {
     background-color: #d5d5d5;
   }
+    
+  &::before {
+    transition: background-color 0.3s ease;      
+   }
 }
 
 .feedback-form__label sup {
   top: -0.1em;
   font-size: inherit;
+}
+
+.feedback-form__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: rgba(#000, 0);
+  border-radius: 50%;
+  transform: translateY(2px) translateX(18px);
+  transition: background-color 0.3s ease;
 }
 
 .feedback-form__radio-input:checked + .feedback-form__label--radio::after {
@@ -128,9 +150,25 @@
   width: 22px;
   height: 22px;
 
-  background-color: #000000;
+  background-color: rgba(#000, 1);
   border-radius: 50%;
   transform: translateY(2px) translateX(18px);
+}
+
+.feedback-form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 10px;
+  height: 18px;
+
+  border: transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: translateY(-70%) translateX(22px) rotate(45deg);
+  transition: border-right-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 .feedback-form__checkbox-input:checked + .feedback-form__label--checkbox::after {
@@ -174,6 +212,8 @@
   background-color: #f2f2f2;
   border: none;
   outline: none;
+  
+  transition: background-color 0.3s ease;
 
   &[name="telephone"] {
     padding-right: 78px;
@@ -195,7 +235,7 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: #fff;
     outline: 4px solid #e5e5e5;
   }
@@ -208,7 +248,6 @@
 
   &:focus::placeholder {
     opacity: 0;
-    transition: opacity 0.3s ease;
   }
 
 }
@@ -234,8 +273,8 @@
 
 .feedback-form__textarea {
   box-sizing: border-box;
-  min-width: 280px;
-  max-width: 280px;
+  width: 100%;
+  max-width: 100%;
   height: 160px;
   margin: 0;
   padding: 22px 21px;
@@ -295,11 +334,21 @@
   }
 }
 
+.feedback-form__hint {
+  display: none;
+}
+
+                   
+
+                           /*768px*/
+
+
+
 @media (min-width: 768px) {
   .feedback-form {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 60px;
+    padding: 0 60px 40px;
   }
 
   .feedback-form__block {
@@ -316,9 +365,36 @@
       order: -1;
       padding-bottom: 10px;
     }
+    
+    &:nth-of-type(4) {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
 
     &::after {
       height: 0;
+    }
+  }
+  
+  .feedback-form__block:nth-of-type(4) .feedback-form__element {
+    flex: 1 1 50%;
+    
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-left: 14.66%;
+    }
+    
+    &:nth-child(4),
+    &:nth-child(5) {
+      padding-left: 4.63%;
+    }
+    
+    &:nth-child(4) {
+      order: 1;
+    }
+    &:nth-child(3),
+    &:nth-child(5) {
+      order: 2;
     }
   }
 
@@ -340,23 +416,29 @@
   }
 
   .feedback-form__title--center {
-    display: block;
     position: relative;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-
-    &::after {
-      content: "";
+    width: 100%;
+    
+    &::before {
+      content: '';
       position: absolute;
-      width: 100px;
-      height: 10px;
-      background-color: black;
+      width: 100%;
+      height: 1px;
+      background-color: #dbdbdb;
       top: 50%;
+      left: 0;
       z-index: -1;
     }
   }
-
+  
+  .feedback-form__title--center span {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    
+    background-color: #fff;
+  }
+  
   .feedback-form__label--big {
     padding-left: 22px;
   }
@@ -377,13 +459,36 @@
     right: 0;
     padding: 0;
   }
-
-  .feedback-form__block:nth-of-type(4) {
-
+  
+  .feedback-form__submit {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .feedback-form__hint {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 84px;
+    right: 60px;
+    
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 26px;
+    color: $font-color;
+    text-transform: uppercase;
+    
+    & sup {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: -13px;
+      font-size: 16px;
+    }
   }
 
-
-
+  
 }
 
 @media (min-width: 1215px) {
@@ -402,11 +507,22 @@
       width: 50%;
       order: -1;
       padding-right: 80px;
+      
+      border-right: 1px solid #dbdbdb;
     }
 
-    &::after {
-      height: 0;
-    }
+  }
+  
+   .feedback-form__block:nth-of-type(4) .feedback-form__element {
+    flex: 1 1 auto;
+     
+    &:nth-child(n+2) {
+       padding-left: 0
+     }
+  }
+  
+  .feedback-form__hint {
+    right: 120px;
   }
 }
 
