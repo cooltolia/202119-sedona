@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML Academy: Седона</title>
+  <title>Седона: отдых в США</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,7 +28,11 @@
       </ul>
     </nav>
     <div class="page-header__logo">
-      <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+      <picture>
+        <source media="(min-width: 1215px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+      </picture>
     </div>
     <button type="button" class="menu-toggle"></button>
   </header>
@@ -47,7 +51,12 @@
         <p class="advantage__about">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="advantage__photo">
-        <img src="/img/photo-city@1x.jpg" alt="Фото мотеля" width="320" height="260">
+        <picture>
+          <source media="(min-width: 920px)" srcset="img/photo-city@2x.jpg 2x, img/photo-city@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/photo-city-tablet@2x.jpg 2x,
+                    img/photo-city-tablet@1x.jpg 1x">
+          <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x">
+        </picture>
       </div>
       <div class="advantage__features">
         <div class="advantage__feature advantage__feature--home">
@@ -69,12 +78,18 @@
         <p class="advantage__about">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
       <div class="advantage__photo">
-        <img src="/img/photo-4-mobile@1x.jpg" alt="Фото моста дьявола" width="320">
+        <picture>
+          <source media="(min-width: 920px)" srcset="img/photo-bridge@2x.jpg 2x, img/photo-bridge@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@2x.jpg 2x,
+                    img/photo-bridge-tablet@1x.jpg 1x">
+          <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x">
+        </picture>
       </div>
       <div class="advantage__header advantage__header--dark">
         <h2 class="advantage__title">Небольшая<br> площадь</h2>
         <div class="advantage__number">– №3 –</div>
-        <p class="advantage__about">Все достопримеча<span>-</span><br>тельности находятся очень близко</p>
+        <p class="advantage__about">Все достопримеча<span>-</span>
+          <br>тельности находятся очень близко</p>
       </div>
       <div class="advantage__header advantage__header--dark">
         <h2 class="advantage__title">Красивая<br> дорога</h2>
@@ -94,23 +109,41 @@
       <a href="#" disabled class="btn find-hotel__btn">Найти гостиницу</a>
     </section>
 
-  <section class="map">
-    <div class="map__pointer"></div>
-  </section>
+    <section class="map">
+      <div class="map__pointer"></div>
+    </section>
 
   </main>
 
-  <footer class="main-footer">
-    <b class="main-footer__hashtag">#visitsedona</b>
-    <div class="main-footer__socials socials">
-      <a class="socials__link socials__link--twitter" href="#"></a>
-      <a class="socials__link socials__link--fb" href="#"></a>
-      <a class="socials__link socials__link--youtube" href="#"></a>
+  <footer class="page-footer">
+    <b class="page-footer__hashtag">#visitsedona</b>
+    <div class="page-footer__socials socials">
+      <a class="socials__link" href="#">
+        <svg class="socials__icon" width="18" height="14">
+          <use xlink:href="img/map.svg#icon-twitter" />
+        </svg>
+      </a>
+      <a class="socials__link" href="#">
+        <svg class="socials__icon" width="9" height="18">
+          <use xlink:href="img/map.svg#icon-facebook" />
+        </svg>
+      </a>
+      <a class="socials__link" href="#">
+        <svg class="socials__icon" width="20" height="14">
+          <use xlink:href="img/map.svg#icon-youtube" />
+        </svg>
+      </a>
     </div>
-    <a class="main-footer__copyright" href="#">Разработано</a>
+    <a class="page-footer__copyright" href="#">Разработано
+      <span class="page-footer__copyright-logo">
+        <svg width="27" height="34">
+          <use xlink:href="img/map.svg#htmlacademy"/>
+        </svg>
+      </span>
+    </a>
   </footer>
 
-<script src="js/menu-toggle.js"></script>
+  <script src="js/menu-toggle.js"></script>
 </body>
 
 </html>

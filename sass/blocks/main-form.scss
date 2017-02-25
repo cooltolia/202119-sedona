@@ -1,5 +1,6 @@
 .main-form {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 400px;
   margin: 0 auto;
 
   font-family: $font-stack;
@@ -7,8 +8,9 @@
   background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 117px, center 51px, center -231px;
-  background-size: 320px 57px, 229px 39px, 320px 389px;
+  background-size: 320px 57px, 229px 39px, 768px 389px;
   border-top: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -16,13 +18,14 @@
     width: auto;
     min-width: 768px;
     max-width: 1100px;
+
     background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-tablet@1x.jpg");
     background-position: center 289px, center 93px, top;
     background-size: 768px 57px, 458px 78px, 100% 346px;
   }
 }
 
-@media (min-width: 825px) {
+@media (min-width: 900px) {
   .main-form {
     background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg");
     background-position: center 289px, center 93px, top;
@@ -34,6 +37,7 @@
   .main-form {
     width: 1200px;
     max-width: 1200px;
+
     background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg");
     background-position: center 300px, center 98px, top;
     background-size: 1200px 57px, 458px 78px, 1199px 357px;

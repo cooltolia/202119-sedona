@@ -3,7 +3,7 @@
   text-transform: uppercase;
 
   &--light {
-    padding: 45px 20px 40px;
+    padding: 42px 20px 36px;
 
     color: #ffffff;
 
@@ -13,7 +13,7 @@
   &--dark {
     position: relative;
 
-    padding: 33px 20px 31px;
+    padding: 29px 20px 27px;
 
     color: #000000;
 
@@ -42,7 +42,7 @@
 }
 
 .advantage__title {
-  margin: 0 auto 15px;
+  margin: 0 auto 10px;
 
   font-weight: bold;
   font-size: 18px;
@@ -50,7 +50,7 @@
 }
 
 .advantage__number {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   font-size: 14px;
   line-height: 21px;
@@ -64,18 +64,16 @@
 }
 
 .advantage__photo {
-  position: relative;
-  align-self: stretch;
-  width: 320px;
-  min-height: 260px;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
 
   img {
-    position: absolute;
     display: block;
     width: 100%;
     max-width: 100%;
-    height: 100%;
-    max-height: 100%;
+    height: auto;
+    min-height: 256px;
   }
 }
 
@@ -142,7 +140,8 @@
 @media (max-width: 767px) {
   .advantage__title br,
   .advantage__about span,
-  .advantage__about br { //перенос в слове "достопримечательности"
+  .advantage__about br {
+    //перенос в слове "достопримечательности"
     display: none;
   }
 }
@@ -152,14 +151,14 @@
   .advantages {
     display: flex;
     flex-flow: row wrap;
-
   }
   .advantage__header {
+    flex-grow: 1;
     box-sizing: border-box;
     width: 256px;
-    min-height: 256px;
+    height: 256px;
+    max-height: 256px;
     padding: 45px 47px 20px;
-    flex-grow: 1;
 
     &--light {
       max-width: 380px;
@@ -183,28 +182,29 @@
     margin-bottom: 25px;
   }
   .advantage__photo {
-    min-width: 66%;
-    min-height: 256px;
     flex-grow: 2;
+    min-width: 66%;
+    height: 256px;
 
     &:nth-child(5) {
       order: 1;
     }
   }
   .advantage__features {
-    width: 100%;
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     flex-flow: row nowrap;
+    width: 100%;
     padding: 0;
   }
   .advantage__feature {
+    flex-grow: 1;
+    flex-basis: 256px;
     box-sizing: border-box;
     min-height: 330px;
-    flex-basis: 256px;
-    flex-grow: 1;
     margin-bottom: 0;
     padding: 158px 50px 10px;
+
     text-align: center;
 
     &--food {
@@ -216,19 +216,20 @@
     }
 
     &::before {
-    top: 60px;
-    left: 50%;
-    transform: translateX(-40px);
+      top: 60px;
+      left: 50%;
 
-    width: 80px;
-    height: 73px;
+      width: 80px;
+      height: 73px;
 
-    background-size: 100% 100%;
+      background-size: 100% 100%;
+      transform: translateX(-40px);
+    }
   }
-}
   .advantage__feature-title {
-    font-size: 21px;
     margin-bottom: 20px;
+
+    font-size: 21px;
   }
 }
 

@@ -1,7 +1,7 @@
 .find-hotel {
   width: 280px;
   margin: 0 auto;
-  padding: 31px 0px 46px;
+  padding: 31px 0 46px;
 
   font-family: $font-stack;
   text-align: center;
@@ -35,16 +35,6 @@
   color: #ffffff;
   text-decoration: none;
 
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    color: #88b6d1;
-
-    background-color: #5496bd;
-  }
-
   &--disabled {
     color: inherit;
 
@@ -55,7 +45,7 @@
 @media (min-width: 768px) {
   .find-hotel {
     width: 480px;
-    padding: 55px 0px;
+    padding: 55px 0;
   }
   .find-hotel__btn {
     width: 480px;
@@ -67,7 +57,7 @@
 
 @media (min-width: 1280px) {
   .find-hotel {
-   padding-bottom: 63px;
+    padding-bottom: 63px;
   }
   .find-hotel__text {
     margin-bottom: 50px;

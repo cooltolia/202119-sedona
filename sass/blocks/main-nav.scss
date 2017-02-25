@@ -27,9 +27,10 @@
 
   &:last-child {
     margin-bottom: 0;
+
     & .main-nav__link {
       box-shadow: 0 -1px 0 0 rgba(#ffffff, 0.2),
-                  inset 0 -3px 2px 0 rgba(#010101, 0.2);
+      inset 0 -3px 2px 0 rgba(#010101, 0.2);
     }
   }
 }
@@ -52,14 +53,17 @@
   &:link {
     color: inherit;
   }
+
   &:visited {
     color: inherit;
   }
+
   &:hover {
     background-color: #669ec0;
     box-shadow: 0 -1px 0 0 rgba(#ffffff, 0.2),
     0 1px 0 0 rgba(#010101, 0.2);
   }
+
   &:active {
     color: #88b6d1;
 
@@ -71,9 +75,11 @@
   .main-nav--nojs {
     display: block;
   }
+
   .main-nav--nojs ~ .menu-toggle {
     display: none;
   }
+
   .main-nav--nojs ~ .page-header__logo {
     top: 226px;
   }
@@ -82,61 +88,78 @@
 @media (min-width: 768px) {
   .main-nav {
     display: block;
+
     font-size: 14px;
-    color: #000;
+    color: #000000;
   }
+
   .main-nav__menu-list {
     display: flex;
     flex-direction: row;
   }
+
   .main-nav__menu-item:nth-child(2) {
     margin-right: 156px;
   }
+
   .main-nav__menu-item {
-    box-shadow: none;
     margin-bottom: 0;
-  }
-  .main-nav__menu-list {
-    background-color: #fff;
-  }
-  .main-nav__link {
+
     box-shadow: none;
-    background-color: #fff;
+  }
+
+  .main-nav__menu-list {
+    background-color: #ffffff;
+  }
+
+  .main-nav__link {
+    background-color: #ffffff;
+    box-shadow: none;
 
     &:link {
       color: inherit;
     }
+
     &:visited {
       color: inherit;
     }
+
     &:hover {
-      background-color: #fff;
-      color: #81b3d2;
+      color: $main-theme;
+
+      background-color: #ffffff;
       box-shadow: none;
     }
+
     &:active {
       color: rgba(black, 0.3);
-      background-color: #fff;
+
+      background-color: #ffffff;
     }
   }
+
   .main-nav__link--active {
     color: #766357;
 
     &:link {
       color: inherit;
     }
+
     &:visited {
       color: inherit;
     }
+
     &:hover {
       color: #604e43;
     }
+
     &:active {
       color: rgba(#766357, 0.3);
     }
   }
+
   .main-nav__menu-item:last-child .main-nav__link {
-    box-shadow: none
+    box-shadow: none;
   }
 }
 

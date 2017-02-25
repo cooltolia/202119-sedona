@@ -16,19 +16,19 @@
   overflow: hidden;
 
   background-color: rgba(black, 0.6);
-
 }
 
 .video-controls__progress-bar {
   position: relative;
+  top: 50%;
   z-index: 2;
 
   width: 235px;
   height: 3px;
   margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
+
   background-color: rgba(white, 0.2);
+  transform: translateY(-50%);
 }
 
 .video-conrols__progress-toggle {
@@ -55,6 +55,25 @@
   background-color: #f2f2f2;
 }
 
+.video-controls__buttons svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: fill 0.2s ease;
+
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    fill-opacity: 0.3;
+  }
+}
+
 .video-conrols__replay {
   position: absolute;
   left: 20px;
@@ -63,7 +82,7 @@
   height: 20px;
 
   background: none;
-  background-image: url("/img/icon-video-replay.svg");
+  //  background-image: url("/img/icon-video-replay.svg");
   border: none;
   outline: none;
   cursor: pointer;
@@ -77,7 +96,7 @@
   height: 20px;
 
   background: none;
-  background-image: url("/img/icon-video-subtitles.svg");
+  //  background-image: url("/img/icon-video-subtitles.svg");
   border: none;
   outline: none;
   cursor: pointer;
@@ -91,19 +110,23 @@
   height: 20px;
 
   background: none;
-  background-image: url("/img/icon-video-fullscreen.svg");
+  //  background-image: url("/img/icon-video-fullscreen.svg");
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-
   .video-controls {
-    padding: 0;
-    height: 93px;
     bottom: 0;
     z-index: 1;
+
+    height: 93px;
+    padding: 0;
+  }
+
+  .video-controls__buttons svg {
+    fill: #ffffff;
   }
 
   .video-controls__progress {
@@ -111,9 +134,10 @@
   }
 
   .video-controls__progress-bar {
+    left: 93px;
+
     width: 389px;
     margin: 0;
-    left: 93px;
   }
 
   .video-conrols__progress-toggle {
@@ -121,15 +145,18 @@
   }
 
   .video-controls__buttons {
-    padding: 0;
-    height: 93px;
     bottom: 93px;
+
+    height: 93px;
+    padding: 0;
+
     background-color: transparent;
   }
 
   .video-controls__buttons button {
-    z-index: 2;
     top: 50%;
+    z-index: 2;
+
     transform: translateY(-50%);
   }
 
@@ -139,8 +166,7 @@
 }
 
 @media (min-width: 1215px) {
-
-   .video-controls__progress-bar {
+  .video-controls__progress-bar {
     width: 540px;
   }
 

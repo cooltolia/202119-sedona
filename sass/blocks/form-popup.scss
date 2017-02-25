@@ -1,0 +1,150 @@
+.form-popup {
+  position: absolute;
+  bottom: 145px;
+  left: 0;
+  z-index: 99;
+
+  display: none;
+  width: 320px;
+  padding-top: 45px;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--open {
+    display: block;
+  }
+
+  &--error {
+    bottom: 515px;
+
+    padding-top: 42px;
+  }
+}
+
+.form-popup__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-popup__about {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0 50px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  text-align: center;
+  color: $font-color;
+  text-transform: uppercase;
+
+  &--error {
+    margin-bottom: 0;
+  }
+}
+
+.form-popup__close {
+  padding: 20px;
+
+  background-color: #f2f2f2;
+
+  &--error {
+    padding: 25px 70px 35px;
+
+    background-color: #ffffff;
+  }
+}
+
+.form-popup__close-btn {
+  width: 100%;
+  height: 58px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .form-popup {
+    &--success {
+      bottom: 384px;
+      left: 50%;
+
+      width: calc(100% - 120px);
+      max-width: 700px;
+      padding-top: 60px;
+
+      transform: translateX(-50%);
+    }
+
+    &--error {
+      bottom: 223px;
+      left: 50%;
+
+      box-sizing: border-box;
+      width: 400px;
+      padding: 53px 61px 0;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  .form-popup__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .form-popup__about {
+    padding: 0 110px;
+
+    &--error {
+      padding: 0;
+    }
+  }
+
+  .form-popup__close {
+    padding: 44px 91px;
+
+    &--error {
+      padding: 32px 0 49px;
+    }
+  }
+}
+
+@media (min-width: 1215px) {
+  .form-popup {
+    &--success {
+      bottom: -121px;
+      left: 50%;
+
+      width: 640px;
+
+      transform: translateX(-50%);
+    }
+
+    &--error {
+      bottom: 110px;
+    }
+  }
+
+  .form-popup__about-success {
+    display: none;
+  }
+
+  .form-popup__close--success {
+    display: none;
+  }
+}
