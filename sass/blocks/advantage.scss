@@ -126,15 +126,15 @@
 }
 
 .advantage__feature--home::before {
-  background-image: url("/img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
 }
 
 .advantage__feature--souvenirs::before {
-  background-image: url("/img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
 }
 
 .advantage__feature--food::before {
-  background-image: url("/img/icon-burger.svg");
+  background-image: url("../img/icon-burger.svg");
 }
 
 @media (max-width: 767px) {

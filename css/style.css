@@ -407,13 +407,13 @@ template {
   font-weight: normal;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("/fonts/ptsans.woff") format("woff"), url("/fonts/ptsans.woff2") format("woff2"); }
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2"); }
 
 @font-face {
   font-weight: bold;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("/fonts/ptsansbold.woff") format("woff"), url("/fonts/ptsansbold.woff2") format("woff2"); }
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2"); }
 
 .page-header {
   position: relative;
@@ -630,13 +630,13 @@ template {
   background-position: center;
   transition: background-color 0.2s ease;
   /*&--twitter {
-    background-image: url("/img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
   &--fb {
-    background-image: url("/img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
   &--youtube {
-    background-image: url("/img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }*/ }
   .socials__link:last-child {
     margin-right: 0; }
@@ -674,7 +674,7 @@ template {
     height: 34px;
     top: -3px;
     left: 92px;
-    background-image: url("/img/htmlacademy.svg");
+    background-image: url("../img/htmlacademy.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }*/ }
@@ -759,7 +759,7 @@ template {
   margin: 0;
   padding: 0;
   background: none;
-  background-image: url("/img/icon-menu.svg");
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -768,7 +768,7 @@ template {
   cursor: pointer; }
 
 .menu-toggle--close {
-  background-image: url("/img/icon-cross.svg"); }
+  background-image: url("../img/icon-cross.svg"); }
 
 @media (min-width: 768px) {
   .menu-toggle {
@@ -779,7 +779,7 @@ template {
   max-width: 400px;
   margin: 0 auto;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 348px, center 90px, top;
   background-size: 101% 57px, 282px 214px, 768px 389px;
@@ -787,37 +787,37 @@ template {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2); }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-mobile@2x.jpg"); }
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@2x.jpg"); }
 
 @media (min-width: 768px) {
   .main-index {
     width: auto;
     min-width: 768px;
     max-width: 1100px;
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-position: center 461px, center 90px, top;
     background-size: 101%, 460px 350px, 100% 518px; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-  background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-tablet@2x.jpg"); }
+  background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@2x.jpg"); }
 
 @media (min-width: 900px) {
   .main-index {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-desktop@1x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg"); } }
 
 @media (min-width: 900px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 900px) and (min-resolution: 144dpi), (min-width: 900px) and (min-resolution: 1.5dppx) {
-  background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-desktop@2x.jpg"); }
+  background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@2x.jpg"); }
 
 @media (min-width: 1215px) {
   .main-index {
     width: 1200px;
     max-width: 1200px;
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-position: center 461px, center 90px, top;
     background-size: 1200px 57px, 460px 350px, 1199px 518px; } }
 
 @media (min-width: 1215px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1215px) and (min-resolution: 144dpi), (min-width: 1215px) and (min-resolution: 1.5dppx) {
-  background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-back-desktop@2x.jpg"); }
+  background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@2x.jpg"); }
 
 .introduction {
   position: relative;
@@ -845,7 +845,7 @@ template {
   box-sizing: border-box;
   width: 100%;
   height: 57px;
-  background-image: url("/img/bg-triangle.svg");
+  background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 0 5px;
   background-size: 100%; }
@@ -950,13 +950,13 @@ template {
   color: #333333; }
 
 .advantage__feature--home::before {
-  background-image: url("/img/icon-house.svg"); }
+  background-image: url("../img/icon-house.svg"); }
 
 .advantage__feature--souvenirs::before {
-  background-image: url("/img/icon-gift.svg"); }
+  background-image: url("../img/icon-gift.svg"); }
 
 .advantage__feature--food::before {
-  background-image: url("/img/icon-burger.svg"); }
+  background-image: url("../img/icon-burger.svg"); }
 
 @media (max-width: 767px) {
   .advantage__title br,
@@ -1093,11 +1093,11 @@ template {
   width: 320px;
   height: 350px;
   margin: 0 auto;
-  background-image: url("/img/bg-map-mobile@1x.jpg"); }
+  background-image: url("../img/bg-map-mobile@1x.jpg"); }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
-    background-image: url("/img/bg-map-mobile@2x.jpg"); } }
+    background-image: url("../img/bg-map-mobile@2x.jpg"); } }
 
 .map__pointer {
   position: absolute;
@@ -1111,28 +1111,28 @@ template {
 @media (min-width: 768px) {
   .map {
     width: 768px;
-    background-image: url("/img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: 100%; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .map {
-    background-image: url("/img/bg-map-tablet@2x.jpg"); } }
+    background-image: url("../img/bg-map-tablet@2x.jpg"); } }
 
 @media (min-width: 1215px) {
   .map {
     width: 1200px;
-    background-image: url("/img/bg-map-desktop@1x.jpg"); } }
+    background-image: url("../img/bg-map-desktop@1x.jpg"); } }
 
 @media (min-width: 1215px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1215px) and (min-resolution: 144dpi), (min-width: 1215px) and (min-resolution: 1.5dppx) {
   .map {
-    background-image: url("/img/bg-map-tablet@2x.jpg"); } }
+    background-image: url("../img/bg-map-tablet@2x.jpg"); } }
 
 .main-photo {
   min-width: 320px;
   max-width: 400px;
   margin: 0 auto;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 117px, center 51px, center -231px;
   background-size: 101% 57px, 229px 39px, 768px 389px;
@@ -1141,40 +1141,40 @@ template {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-photo {
-    background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-mobile@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .main-photo {
     width: auto;
     min-width: 768px;
     max-width: 1100px;
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-position: center 289px, center 93px, top;
     background-size: 101%, 458px 78px, 100% 346px; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .main-photo {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-tablet@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@2x.jpg"); } }
 
 @media (min-width: 900px) {
   .main-photo {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg"); } }
 
 @media (min-width: 900px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 900px) and (min-resolution: 144dpi), (min-width: 900px) and (min-resolution: 1.5dppx) {
   .main-photo {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@2x.jpg"); } }
 
 @media (min-width: 1215px) {
   .main-photo {
     width: 1200px;
     max-width: 1200px;
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-position: center 300px, center 98px, top;
     background-size: 1200px 57px, 458px 78px, 1199px 357px; } }
 
 @media (min-width: 1215px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1215px) and (min-resolution: 144dpi), (min-width: 1215px) and (min-resolution: 1.5dppx) {
   .main-photo {
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@2x.jpg"); } }
 
 .photo-list {
   box-sizing: border-box;
@@ -1249,7 +1249,7 @@ template {
     width: 23px;
     height: 21px;
 
-    background-image: url("/img/icon-like.svg");
+    background-image: url("../img/icon-like.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -1376,12 +1376,12 @@ template {
   position: relative;
   width: 100%;
   height: 201px;
-  background-image: url("/img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-size: cover; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .video-block__item {
-    background-image: url("/img/video-mobile@2x.jpg"); } }
+    background-image: url("../img/video-mobile@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .video-block {
@@ -1398,11 +1398,11 @@ template {
     width: 648px;
     height: 499px;
     margin: 0 auto;
-    background-image: url("/img/video-tablet@1x.jpg"); } }
+    background-image: url("../img/video-tablet@1x.jpg"); } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .video-block__item {
-    background-image: url("/img/video-tablet@2x.jpg"); } }
+    background-image: url("../img/video-tablet@2x.jpg"); } }
 
 @media (min-width: 1215px) {
   .video-block {
@@ -1411,11 +1411,11 @@ template {
     width: 800px;
     height: 500px;
     margin: 0 auto;
-    background-image: url("/img/video-desktop@1x.jpg"); } }
+    background-image: url("../img/video-desktop@1x.jpg"); } }
 
 @media (min-width: 1215px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1215px) and (min-resolution: 144dpi), (min-width: 1215px) and (min-resolution: 1.5dppx) {
   .video-block__item {
-    background-image: url("/img/video-desktop@2x.jpg"); } }
+    background-image: url("../img/video-desktop@2x.jpg"); } }
 
 .video-controls {
   position: absolute;
@@ -1543,7 +1543,7 @@ template {
   max-width: 400px;
   margin: 0 auto;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 117px, center 51px, center -231px;
   background-size: 101% 57px, 229px 39px, 768px 389px;
@@ -1552,40 +1552,40 @@ template {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-form {
-    background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-mobile@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .main-form {
     width: auto;
     min-width: 768px;
     max-width: 1100px;
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-position: center 289px, center 93px, top;
     background-size: 101%, 458px 78px, 100% 346px; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .main-form {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-tablet@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@2x.jpg"); } }
 
 @media (min-width: 900px) {
   .main-form {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg"); } }
 
 @media (min-width: 900px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 900px) and (min-resolution: 144dpi), (min-width: 900px) and (min-resolution: 1.5dppx) {
   .main-form {
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@2x.jpg"); } }
 
 @media (min-width: 1215px) {
   .main-form {
     width: 1200px;
     max-width: 1200px;
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-position: center 300px, center 98px, top;
     background-size: 1200px 57px, 458px 78px, 1199px 357px; } }
 
 @media (min-width: 1215px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1215px) and (min-resolution: 144dpi), (min-width: 1215px) and (min-resolution: 1.5dppx) {
   .main-form {
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/text-sedona.svg"), url("/img/bg-back-desktop@2x.jpg"); } }
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@2x.jpg"); } }
 
 .feedback-form {
   position: relative;
@@ -1765,13 +1765,13 @@ template {
   transition: background-color 0.3s ease; }
   .feedback-form__input[name="telephone"] {
     padding-right: 78px;
-    background-image: url("/img/icon-phone.svg"), linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+    background-image: url("../img/icon-phone.svg"), linear-gradient(to bottom, #e6e6e6, #e6e6e6);
     background-repeat: no-repeat;
     background-position: right 18px center, top right;
     background-size: 18px 18px, 58px 58px; }
   .feedback-form__input[name="email"] {
     padding-right: 78px;
-    background-image: url("/img/icon-mail.svg"), linear-gradient(to bottom, #e6e6e6, #e6e6e6);
+    background-image: url("../img/icon-mail.svg"), linear-gradient(to bottom, #e6e6e6, #e6e6e6);
     background-repeat: no-repeat;
     background-position: right 18px center, top right;
     background-size: 18px 18px, 58px 58px; }
