@@ -1093,7 +1093,8 @@ template {
   width: 320px;
   height: 350px;
   margin: 0 auto;
-  background-image: url("../img/bg-map-mobile@1x.jpg"); }
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-size: cover; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
@@ -1105,7 +1106,7 @@ template {
   left: 50%;
   width: 27px;
   height: 27px;
-  background-image: url(/img/icon-map-marker.svg);
+  background-image: url("../img/icon-map-marker.svg");
   transform: translate(-13.5px, -13.5px); }
 
 @media (min-width: 768px) {
