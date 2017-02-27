@@ -117,6 +117,9 @@
   .photo-list {
     display: flex;
     flex-flow: row wrap;
+    width: auto;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 0 60px;
   }
   .photo-list__item {
@@ -180,6 +183,7 @@
 
 @media (min-width: 1215px) {
   .photo-list {
+    max-width: 100%;
     padding: 0;
   }
 

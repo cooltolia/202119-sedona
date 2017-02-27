@@ -37,6 +37,12 @@
   background-size: cover;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .video-block__item {
+    background-image: url("/img/video-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .video-block {
     padding: 65px 60px 66px;
@@ -62,6 +68,12 @@
 
     background-image: url("/img/video-tablet@1x.jpg");
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .video-block__item {
+      background-image: url("/img/video-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: 1215px) {
@@ -75,5 +87,11 @@
     margin: 0 auto;
 
     background-image: url("/img/video-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .video-block__item {
+      background-image: url("/img/video-desktop@2x.jpg");
+    }
   }
 }

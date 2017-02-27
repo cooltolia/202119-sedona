@@ -8,6 +8,12 @@
   background-image: url("/img/bg-map-mobile@1x.jpg");
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("/img/bg-map-mobile@2x.jpg");
+  }
+}
+
 .map__pointer {
   position: absolute;
   top: 50%;
@@ -27,6 +33,12 @@
     background-image: url("/img/bg-map-tablet@1x.jpg");
     background-size: 100%;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("/img/bg-map-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: 1215px) {
@@ -34,5 +46,11 @@
     width: 1200px;
 
     background-image: url("/img/bg-map-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("/img/bg-map-tablet@2x.jpg");
+    }
   }
 }
